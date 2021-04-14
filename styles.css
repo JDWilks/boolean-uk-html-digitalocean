@@ -1,0 +1,475 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+}
+
+/* menu styling */
+
+/* sticky working but with no background so i've not used it this time */
+
+.menu {
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 1px; */
+}
+
+nav {
+  align-items: center;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+}
+
+.logo img {
+  width: 150px;
+  align-content: center;
+}
+
+.menu-middle {
+  text-align: center;
+}
+
+.menu-right {
+  text-align: right;
+}
+
+/* I don't know why i can't group together the 2 bits of below code ?  */
+
+.menu-middle li {
+  list-style: none;
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-right: 10px;
+  color: rgb(82, 79, 79);
+}
+
+.menu-right li {
+  list-style: none;
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-right: 10px;
+  color: rgb(82, 79, 79);
+}
+
+.arrow-down {
+  width: 10px;
+}
+
+/* hero styling */
+
+.hero {
+  grid-area: hero;
+  background-color: blue;
+  place-items: center;
+  height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJsdWUlMjB0ZWNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  opacity: 0.7;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.twocolumngrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  /* place-items: center; */
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  color: #edf1fe;
+  /* text-shadow: 5px 5px 10px rgb(0, 0, 0); */
+  text-shadow: 2px 2px 5px rgb(224, 26, 224);
+}
+
+h2 {
+  font-size: 0.9rem;
+  line-height: 2;
+  color: white;
+}
+
+.content-left {
+  margin-top: 50px;
+}
+
+.form-right {
+  margin-top: 50px;
+  padding: 20px 0 20px 20px;
+}
+
+.boxcontent {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  padding: 25px;
+}
+
+.submissionfield,
+.submit-button,
+.submit-button2 {
+  display: block;
+  line-height: 2;
+  background-color: none;
+  fill: none;
+  background: transparent;
+  border: 1px solid rgba(180, 177, 177, 0.336);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.submit-button::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.submit-button2::placeholder {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  color: blue;
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.tandc {
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.tandc1 {
+  color: blue;
+}
+
+/* partners styling */
+
+.partners {
+  background-color: rgba(230, 227, 227, 0.349);
+  grid-area: partners;
+  height: 200px;
+}
+
+.pheading {
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+}
+
+.partner-logos {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+.partner-grid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.partner-logos img {
+  width: 150px;
+}
+
+.cust-stories {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: blue;
+}
+
+.arrow1 {
+  color: blue;
+}
+
+/* deploy styling */
+
+.deploy {
+  grid-area: deploy;
+  background-color: white;
+  height: 600px;
+}
+
+.deploy-copy1,
+.deploy-copy2 {
+  text-align: center;
+}
+
+.deploy-copy1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+.deploy-copy2 {
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.deploygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-deploy {
+  margin-top: 80px;
+  display: block;
+}
+
+.left-deploy li {
+  list-style: none;
+
+  /* font-size: 0.9rem; */
+
+  color: rgb(82, 79, 79);
+  padding: 10px;
+  border-left: 2px solid rgba(100, 98, 98, 0.37);
+  margin-left: 100px;
+}
+
+.right-deploy {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.box-heading {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: rgb(73, 72, 72);
+}
+.box-text {
+  font-size: 0.7rem;
+  color: grey;
+  line-height: 2;
+}
+
+.deployicons {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+/* developers styling */
+
+.developers {
+  grid-area: developers;
+  background-color: rgba(230, 227, 227, 0.349);
+  height: 600px;
+}
+
+.dev-top-copy {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dev-mid-copy {
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.dev-grid {
+  display: grid;
+  grid-template:
+    "dev-grid-icons-left Droplet-image dev-grid-icons-right "
+    ". dev-bttm-copy . "
+    ". menu-icon . ";
+  place-items: center;
+}
+
+.Droplet-image {
+  grid-area: Droplet-image;
+  width: 500px;
+  box-shadow: 10px 5px 5px rgba(161, 160, 160, 0.452);
+}
+
+.dev-bttm-copy {
+  grid-area: dev-bttm-copy;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+}
+
+.menu-icon {
+  grid-area: menu-icon;
+  width: 20px;
+  display: inline-block;
+}
+
+.dev-grid-icons-left {
+  grid-area: dev-grid-icons-left;
+  width: 20px;
+}
+
+.dev-grid-icons-right {
+  grid-area: dev-grid-icons-right;
+  width: 20px;
+}
+
+/* features styling */
+
+.features {
+  grid-area: features;
+  background-color: white;
+  height: 400px;
+}
+
+.Features-copy {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.feat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.feature-copy {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: rgb(46, 45, 45);
+}
+
+.feature-copy2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+.feature-copy3 {
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  font-size: 10px;
+  color: blue;
+}
+
+.feat-icons {
+  width: 40px;
+}
+
+/* service stlying */
+
+.service {
+  grid-area: service;
+  background-color: #2a2a72;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+  height: 400px;
+}
+
+.service-top-copy {
+  font-weight: bold;
+  /* font-size: 1.5rem; */
+  padding-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.code {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.region {
+  font-size: 0.8rem;
+  color: white;
+}
+.test-speed {
+  font-size: 0.8rem;
+  color: #00d2d0;
+}
+
+/* love styling */
+
+.love {
+  grid-area: love;
+  background-color: white;
+  height: 500px;
+}
+
+/* get started stlying */
+
+.getstarted {
+  grid-area: getstarted;
+  background-color: lightblue;
+  height: 500px;
+}
+
+/* footer styling */
+
+.footer {
+  grid-area: footer;
+  background-color: lightpink;
+  height: 500px;
+}
